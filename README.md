@@ -23,6 +23,8 @@
 ![image](https://github.com/Maksimssi/genie/assets/142511332/0676c5e4-46b7-4616-ac17-246fb8c71a82)
 ### ✔회원가입
 ![image](https://github.com/Maksimssi/genie/assets/142511332/bd79100c-5572-4bf8-adee-f2dec2e6ed8d)
+### ✔최근 본 상품
+![image](https://github.com/Maksimssi/genie/assets/142511332/88fd5441-c186-4404-bc5d-27be64da4872)
 ### ✔상품 목록
 ![image](https://github.com/Maksimssi/genie/assets/142511332/f7da13dc-a1f8-4655-9178-56ea87ecce56)
 ### ✔상품 정보
