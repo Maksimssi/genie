@@ -19,5 +19,5 @@
 ![image](https://github.com/Maksimssi/genie/assets/142511332/03f10079-b971-478a-9c3a-0e5dae596c4c)
 
 ## 4️⃣기능 별 화면 및 소개
-### 로그인
-![image](https://github.com/Maksimssi/genie/assets/142511332/0676c5e4-46b7-4616-ac17-246fb8c71a82)
+### ✔로그인
+![image](https://github.com/Maksimssi/genie/assets/142511332/0676c5e4-46b7-4616-ac17-246fb8c71a82){: width="100" height="100}
