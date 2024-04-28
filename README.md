@@ -1,4 +1,4 @@
-![image](https://github.com/Maksimssi/genie/assets/142511332/1525507b-37f3-4d84-ada9-99ffc8700fec)![image](https://github.com/Maksimssi/genie/assets/142511332/0cf6860b-8460-48bc-a818-ed414ccc0405)# 온라인 중고 서점 구현(Genie)
+# 온라인 중고 서점 구현(Genie)
 
 알라딘을 벤치마킹한 온라인 서점 입니다.
 * * *
