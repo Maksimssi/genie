@@ -14,5 +14,7 @@
 
 ## 1️⃣사용 기술 스택
 
-## 2️⃣프로젝트 주요 기능
-![image](https://github.com/Maksimssi/genie/assets/142511332/9200b2eb-23ad-441c-a936-d99ea6ddd8c6)
+## 2️⃣프로젝트 주요 기능   
+
+## 3️⃣ERD 설계도
+![image](https://github.com/Maksimssi/genie/assets/142511332/03f10079-b971-478a-9c3a-0e5dae596c4c)
