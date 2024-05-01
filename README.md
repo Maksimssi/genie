@@ -23,9 +23,10 @@
 
 
 ## 프로젝트 개요   
-
+* * *
 ## ERD
 ![image](https://github.com/Maksimssi/genie/assets/142511332/03f10079-b971-478a-9c3a-0e5dae596c4c)
 
 ## 주요 기능
 
+* * *
