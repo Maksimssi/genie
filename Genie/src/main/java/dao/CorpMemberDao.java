@@ -20,12 +20,10 @@ public class CorpMemberDao {
 	private static final String ns = "member.";
 	
 	public int insertCorpMember(CorpMember mem) throws UnsupportedEncodingException, SQLException {
-		System.out.println("insertMember");
 		return sqlSession.getMapper(CorpMemberAnno.class).insertCorpMember(mem);
 	}
 	
 	public CorpMember oneMember(String userid) throws SQLException {
-		System.out.println(userid);
 		CorpMember mem = sqlSession.getMapper(CorpMemberAnno.class).oneMember(userid);
 		return mem;
 	}
