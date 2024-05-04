@@ -15,6 +15,8 @@
 
 * * *
 ## Stacks
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
 ### Front-End :
 
 ### Back-End : 자바 스프링 마이바티스 파이썬 플라스크 
