@@ -38,11 +38,12 @@
   <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
 </div>
 * * *
+
 ## ERD
 ![GENIE_ERD](https://github.com/Maksimssi/genie/assets/142511332/0db3dfcb-c55e-4702-ae28-77c3bddf08ee)
 
 ## 주요 기능
-요약
+#### 요약
 |공통|사용자|관리자|
 |---|----|---|
 |내용|내용|내용|
