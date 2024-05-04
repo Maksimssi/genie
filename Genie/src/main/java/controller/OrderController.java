@@ -52,13 +52,11 @@ public class OrderController {
 	        req.setAttribute("url", url);
 	        return "alert";
 		}
-		System.out.println("slang---"+userid);
 		List<Order> li = od.slangList(userid);
 		if(!li.isEmpty()) {
 			int total = od.slangTotal(userid);
 			req.setAttribute("total", total);			
 		}
-		System.out.println(li);
 		req.setAttribute("li", li);
 		
 		return "order/slang";
@@ -97,7 +95,6 @@ public class OrderController {
 		
 		// slang에서 1인 애들 받아와서
 		List<Order> li = od.ischeckedSlangItem(userid);
-		System.out.println(li);
 		
 		int size = li.size();
 		
@@ -165,15 +162,12 @@ public class OrderController {
 		if(userid==null) {
 			userid = "";
 		}
-		
-		System.out.println(o);
+
 		String msg = "수량을 변경 하였습니다.";
 		String url = "/order/shoppingBasket";
 		
 		
 		int left = od.getInven(o.getBooknum());
-		System.out.println(left);
-		System.out.println(o.getAmount());
 		if(o.getAmount() > left) {
 			msg = "재고가 부족합니다. 남은 재고량 : " + left;
 			url = "/order/shoppingBasket";
@@ -199,7 +193,6 @@ public class OrderController {
 		Map map = new HashMap<>();
 		map.put("cartid", o.getCartid());
 		map.put("amount", o.getAmount());
-		System.out.println(map);
 		num = od.changeItemAmount(map);
 		
 		int cartCount = od.cartCount(userid);
@@ -216,7 +209,6 @@ public class OrderController {
 		if(userid==null) {
 			userid = "";
 		}
-		System.out.println(cartid);
 		int num;
 		num = od.deleteItemCart(cartid);
 		
@@ -271,7 +263,6 @@ public class OrderController {
 		int cnt = 0;
 		for(Order o : li) {
 			int inven = od.checkInven(o.getBooknum());
-			System.out.println(inven);
 			String bookname = od.getBookName(o.getBooknum());
 
 			if(o.getAmount() > inven ) {
@@ -289,7 +280,6 @@ public class OrderController {
 		
 		//Member Model 변경필요
 		Order mv = od.oneMember(userid);
-		System.out.println(mv);
 		req.setAttribute("mv", mv);
 		int total = od.getOrderTotalPay(userid);
 		req.setAttribute("total", total);
@@ -367,7 +357,6 @@ public class OrderController {
 		if(userid==null) {
 			userid = "";
 		}
-		System.out.println(ol);
 		
 		//보유한 포인트보다 크거나, 주문금액보다 큰 포인트 사용시 불가처리하기
 		int point = ol.getDiscount();
@@ -421,7 +410,6 @@ public class OrderController {
 		int num3 = od.orderInfo(ol2);
 		//사용 포인트 로그 저장
 		if(ol.getDiscount()>0) {
-			System.out.println("할인량 : " + ol.getDiscount());
 			int num6 = od.useUserPoint(userid, ol.getDiscount());;
 			int num7 = od.useUserPointLog(userid, orderid, ol.getDiscount());
 		}
@@ -443,7 +431,6 @@ public class OrderController {
 	//수취확인시
 	@RequestMapping("recConf")
 	public String recConf(String userid) throws Exception {
-		System.out.println("recCof");
 		userid = (String)session.getAttribute("userid");
 		if(userid==null) {
 			userid = "";
@@ -451,10 +438,7 @@ public class OrderController {
 		
 		int orderlogid = Integer.parseInt(req.getParameter("orderlogid"));
 		String orderid = req.getParameter("orderid");
-		
-		
-		System.out.println(userid +"--"+ orderlogid +"--"+ orderid);
-		
+	
 		int num, num2, num3;
 		
 		//orderstate 를 배달완료 -> 수취확인으로 변경
@@ -466,8 +450,6 @@ public class OrderController {
 		num2 = od.getPoint(userid, point);
 		//포인트 부여 기록 저장
 		num3 = od.getPointLog(userid, orderlogid, point);
-		
-		System.out.println(orderid);
 		
 		String msg = "수취확인이 정상적으로 진행되었습니다.";
 		String url = "/order/orderLogDetail?orderid=" + orderid;
@@ -485,8 +467,6 @@ public class OrderController {
 		}
 		String orderid = ol.getOrderid();
 		
-		System.out.println(userid + "--" + orderid);
-		
 		//배달완료 상품 리스트 추출
 		List<OrderLog> li = od.orderLogDetailList(userid, orderid);
 		if(li.isEmpty()) {
@@ -497,7 +477,6 @@ public class OrderController {
 			return "alert";
 		}
 		
-		System.out.println(li);
 		for(OrderLog ol2 : li) {
 			//배송완료 > 수취완료 로 상태 업데이트
 			int num1 = od.updateState(ol2.getOrderlogid());
@@ -507,8 +486,7 @@ public class OrderController {
 			int num2 = od.getPoint(ol2.getUserid(), point);
 			//포인트 부여 기록 저장
 			int num3 = od.getPointLog(ol2.getUserid(), ol2.getOrderlogid(), point);
-			
-			System.out.println(ol2);
+
 		}
 		//orderinfo 에서 배송완료 > 수취완료로 전환
 		int num4 = od.updateStateInfo(orderid);
