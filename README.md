@@ -16,6 +16,8 @@
 * * *
 ## Stacks
 <div align=center> 
+  ### Front-End :
+  ### Back-End : 
   <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
   <br>
@@ -24,14 +26,14 @@
   <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white">
 
    <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
-
+### DataBase : 오라클
    <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 </div>
-### Front-End :
 
-### Back-End : 자바 스프링 마이바티스 파이썬 플라스크 
 
-### DataBase : 오라클
+
+
+
 
 * * *
 
