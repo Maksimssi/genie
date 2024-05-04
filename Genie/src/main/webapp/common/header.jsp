@@ -57,7 +57,6 @@
 	window.onload = function() {
 		
 	   var currentPage = window.location.pathname.split('/').pop();
-	   console.log("cp:"+currentPage)
 	   if (currentPage === 'login' || currentPage == 'join' ) {
 	        var elementToHide = document.getElementById('pos_scroll');
 	        if (elementToHide) {
@@ -107,7 +106,6 @@
         var nameEQ = name + "=";
         var cookies = document.cookie.split(';');
         let ddd = document.querySelector("#recentbooks")
-        console.log(cookies)
        
       
         for (var i = 0; i < cookies.length; i++) {
@@ -124,8 +122,7 @@
 
         	// 현재 쿠키의 개수
        		var currentCookies = cookies.length;
-        	
-       		console.log(currentCookies)
+
         	 // 쿠키의 개수가 최대 개수보다 큰 경우, 첫 번째 쿠키 제거
             if (currentCookies > maxCookies*2) {
                 var expiredCookie = cookies[0];
