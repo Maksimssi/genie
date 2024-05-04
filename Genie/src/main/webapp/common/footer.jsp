@@ -98,7 +98,6 @@
 			            dataType: 'json',
 			            success: function(data) {
 			                var ans = data.msg;
-			                console.log(data);
 			                var msgArray = ans.split('.');
 			                for (var i = 0; i < msgArray.length; i++) {
 			                    generate_message(msgArray[i], 'user');
@@ -106,7 +105,6 @@
 			                
 			            },
 			            error: function(xhr, status, error) {
-			                console.error('데이터 가져오기 실패:', error);
 			            }
 			        });
 
