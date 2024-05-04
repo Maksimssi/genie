@@ -72,8 +72,7 @@ public class MemberController {
 
 	@RequestMapping("joinPro")
 	public String joinPro(IndiMember mem) throws Exception{
-       
-		System.out.println(mem);
+
 		int num = imd.insertindiMember(mem);
 		String msg = "저장했습니다.";
 		String url = "/member/login";
@@ -143,7 +142,6 @@ public class MemberController {
 			int cartCount = od.cartCount(userid);
 			
 			session.setAttribute("cartCount", cartCount);
-			System.out.println(cartCount);
 		}
 		request.setAttribute("msg", msg);
 		request.setAttribute("url", url);
@@ -261,7 +259,6 @@ public class MemberController {
 	
 	@RequestMapping("findIdPro")
 	public String findIdPro(String name, String email) throws Exception{
-		System.out.println(name +":"+email);
 		IndiMember mem = imd.findId(name, email);
 		String msg = "입력 값을 확인하세요.";
 		String url = "/member/findIdForm";
@@ -317,7 +314,6 @@ public class MemberController {
 	@RequestMapping("joincorpPro")
 	public String joinPro(CorpMember mem) throws Exception{
 
-		System.out.println(mem);
 		int num = cmd.insertCorpMember(mem);
 		String msg = "저장했습니다.";
 		String url = "/view/login.jsp";
