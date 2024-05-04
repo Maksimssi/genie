@@ -99,8 +99,6 @@ public class BookController {
 		Notice nt = noticeDao.getOneNotice();
 		int ntId = nt.getNoticeId();
 		String ntTitle = nt.getTitle();
-		//.out.println(ntId);
-		//.out.println(ntTitle);
 		session.setAttribute("ntId", ntId);
 		session.setAttribute("ntTitle", ntTitle);
 
@@ -157,7 +155,6 @@ public class BookController {
 		req.setAttribute("bookCount", bookCount);
 		req.setAttribute("keyword", keyword);
 		req.setAttribute("li", li);
-		.out.println(session.getAttributeNames());
 		return "book/bookList";
 	}
 	@RequestMapping("Bookcheck")
@@ -204,7 +201,6 @@ public class BookController {
 		req.setAttribute("bookCount", bookCount);
 
 		req.setAttribute("li", li);
-		.out.println(session.getAttributeNames());
 		return "book/checkBook";
 	}
 	@RequestMapping("bookUpdateForm")
@@ -324,7 +320,6 @@ public class BookController {
 	@RequestMapping("bookPro")
 	public String bookPro(Book book) throws Exception {
 		int num = bd.insertBook(book);
-		.out.println(book);
 		String msg = "게시물 등록 성공";
 		String url = "/book/bookList";
 
@@ -475,7 +470,6 @@ public class BookController {
 		// 1. 있는지 검사
 		// 쿼리 1번
 		int num1 = bd.checkCart(c);
-		.out.println(num1);
 		if (num1 >= 1) {
 			bd.updateCart(c);
 		} else {
@@ -503,7 +497,6 @@ public class BookController {
 		}
 
 		int num1 = bd.checkSlang(s);
-		.out.println(num1);
 		if (num1 >= 1) {
 			String msg = "이미 찜한 상품입니다.";
 			String url = "/order/slang";
