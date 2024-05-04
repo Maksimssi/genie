@@ -54,7 +54,6 @@ public class NoticeController { // 공지사항 게시판 controller
 
 		// 공지사항 paging 값 설정
 		Paging paging;
-		System.out.println(search);
 		
 		// 검색 키워드 확인
 		if (search.getSearchKeyword() != null && search.getSearchKeyword().trim().length() != 0) {	// 검색 키워드가 있을 경우 
