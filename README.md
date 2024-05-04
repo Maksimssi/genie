@@ -40,6 +40,7 @@
 * * *
 ## ERD
 ![GENIE_ERD](https://github.com/Maksimssi/genie/assets/142511332/0db3dfcb-c55e-4702-ae28-77c3bddf08ee)
+
 ## 주요 기능
 요약
 |공통|사용자|관리자|
