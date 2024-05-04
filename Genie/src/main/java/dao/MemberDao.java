@@ -27,12 +27,10 @@ public class MemberDao {
 	//private static final String ns = "member.";
 	
 	public int insertindiMember(IndiMember mem) throws UnsupportedEncodingException, SQLException {
-		System.out.println("insertMember");
 		return sqlSession.getMapper(MemberAnno.class).insertindiMember(mem);
 	}
 	
 	public IndiMember oneMember(String userid) throws SQLException {
-		System.out.println(userid);
 		IndiMember mem = sqlSession.getMapper(MemberAnno.class).oneMember(userid);
 		return mem;
 	}
