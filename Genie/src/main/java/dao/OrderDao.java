@@ -171,7 +171,6 @@ public class OrderDao {
 		Map map = new HashMap<>();
 		map.put("userid", userid);
 		map.put("orderid", orderid);
-		System.out.println(map);
 		return sqlSession.selectOne(NS+"orderDetailTotal", map);
 	}
 	//주문기록 번호별 상품 출력
@@ -211,7 +210,6 @@ public class OrderDao {
 	
 	//포인트 추출
 	public int selectPoint(int orderlogid) {
-		System.out.println("-------2--------");
 		return sqlSession.selectOne(NS+"selectPoint", orderlogid);
 	}
 	//멤버에 포인트 가산
