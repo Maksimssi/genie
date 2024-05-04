@@ -2,19 +2,21 @@
 
 ## 개요
 
-권한 crud 데이터의-상관관계-이해 
+권한 crud 데이터의-상관관계-이해 다루어볼 기회
 
 
 * * *
 
 ## 📚목차
-###   - [Stacks](#Stacks)
+
 ###   - [프로젝트 개요](#프로젝트-개요)
+###   - [Stacks](#Stacks)
 ###   - [ERD](#ERD)
 ###   - [주요 기능](#주요-기능)
 
 * * *
-
+## 프로젝트 개요   
+* * *
 ## Stacks
 ### Front-End :
 
@@ -26,8 +28,7 @@
 
 
 
-## 프로젝트 개요   
-* * *
+
 ## ERD
 ![GENIE_ERD](https://github.com/Maksimssi/genie/assets/142511332/0db3dfcb-c55e-4702-ae28-77c3bddf08ee)
 
